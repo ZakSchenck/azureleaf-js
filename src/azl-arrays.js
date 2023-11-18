@@ -46,34 +46,34 @@ class Arrayzureleaf extends Azureleaf {
    */
   allOccurrences = (arr) => {
     if (!Array.isArray(arr)) return arr;
-    const occurenceObj = {};
+    const occurrenceObj = {};
 
     // Sets each value in the object to how many occurrences the array has for each element
     for (let val of arr) {
-      occurenceObj[val] ? (occurenceObj[val] += 1) : (occurenceObj[val] = 1);
+      occurrenceObj[val] ? (occurrenceObj[val] += 1) : (occurrenceObj[val] = 1);
     }
 
-    return occurenceObj;
+    return occurrenceObj;
   };
 
   /**
-   * Returns an array with each unique occurence in a previous array
+   * Returns an array with each unique occurrence in a previous array
    * @param {Array} arr 
    * @returns {Array} 
    */
   unique = (arr) => {
     if (!Array.isArray(arr)) return arr;
-    const occurenceObj = {};
+    const occurrenceObj = {};
     const newArr = [];
 
-    // Creates occurence obj
+    // Creates occurrence obj
     for (let val of arr) {
-      occurenceObj[val] ? (occurenceObj[val] += 1) : (occurenceObj[val] = 1);
+      occurrenceObj[val] ? (occurrenceObj[val] += 1) : (occurrenceObj[val] = 1);
     }
 
-    // If the occurence is 1, and a number, push as an integer. Else, push as a string
-    for (let key in occurenceObj) {
-      if (occurenceObj[key] === 1) {
+    // If the occurrence is 1, and a number, push as an integer. Else, push as a string
+    for (let key in occurrenceObj) {
+      if (occurrenceObj[key] === 1) {
         !isNaN(parseInt(key) ? newArr.push(parseInt(key)) : newArr.push(key));
       }
     }
