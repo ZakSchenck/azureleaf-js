@@ -152,5 +152,3 @@ class Arrayzureleaf extends Azureleaf {
 module.exports = Arrayzureleaf;
 const $azl = new Arrayzureleaf();
 
-const x = $azl.rotateBack(["heel", "heel", "goat", "yup", "hey"], 1);
-console.log(x);
