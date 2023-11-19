@@ -6,7 +6,7 @@ class Objectureleaf extends Azureleaf {
    * @param {Object} obj
    * @returns {Object}
    */
-  objCopy = (obj) => {
+  objCopy(obj) {
     // Check if parameter is an object
     if (typeof obj !== "object" || obj === null) return obj;
     const newObj = {};
@@ -27,7 +27,7 @@ class Objectureleaf extends Azureleaf {
    * @param {Object} keys 
    * @returns {Object}
    */
-  changeKeys = (obj, keys) => {
+  changeKeys(obj, keys) {
     return Object.keys(obj).reduce((acc, key) => {
       // Check if a new key name exists
       const newKey = keys[key] || key;
@@ -37,7 +37,7 @@ class Objectureleaf extends Azureleaf {
     }, {});
   };
 
-  objEquality = (obj1, obj2) => {
+  objEquality(obj1, obj2) {
     if (Object.keys(obj1).length !== Object.keys(obj2).length) {
         return false;
     }

@@ -6,7 +6,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Array} arr
    * @returns {Array}
    */
-  shuffle = (arr) => {
+  shuffle(arr) {
     if (!Array.isArray(arr)) return arr;
 
     for (let i = arr.length - 1; i > 0; i--) {
@@ -23,7 +23,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Array} arr
    * @returns {Array}
    */
-  flatten = (arr) => {
+  flatten(arr) {
     if (!Array.isArray(arr)) return arr;
     const flattenedArr = [];
 
@@ -44,7 +44,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Array} arr
    * @returns {Object}
    */
-  allOccurrences = (arr) => {
+  allOccurrences(arr) {
     if (!Array.isArray(arr)) return arr;
     const occurrenceObj = {};
 
@@ -61,7 +61,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Array} arr 
    * @returns {Array} 
    */
-  unique = (arr) => {
+  unique(arr) {
     if (!Array.isArray(arr)) return arr;
     const occurrenceObj = {};
     const newArr = [];
@@ -87,7 +87,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Number} size 
    * @returns {Array}
    */
-  chunk = (arr, size) => {
+  chunk(arr, size) {
     if (!Array.isArray(arr)) return arr;
     const newArr = [];
     let sizeCounter = 0;
@@ -113,7 +113,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Number} positions 
    * @returns {Array}
    */
-  rotate = (arr, positions) => {
+  rotate(arr, positions) {
     if (!Array.isArray(arr)) return arr;
     const length = arr.length;
 
@@ -133,7 +133,7 @@ class Arrayzureleaf extends Azureleaf {
    * @param {Number} positions 
    * @returns {Array}
    */
-  rotateBack = (arr, positions) => {
+  rotateBack(arr, positions) {
     if (!Array.isArray(arr)) return arr;
     const length = arr.length;
 

@@ -4,7 +4,7 @@ class Azureleaf {
    * @param {String} string
    * @returns {String}
    */
-  capitalizeFirst = (string) => {
+  capitalizeFirst(string) {
     // Error handling checks if valid string
     if (typeof string !== "string" || string.length === 0) return string;
 
@@ -16,7 +16,7 @@ class Azureleaf {
    * @param {String} string
    * @returns {String}
    */
-  camelCase = (string) => {
+  camelCase(string) {
     // Gets rid of non alphabetical characters and separates each word
     const words = string.split(/[^A-Za-z]+/);
 
@@ -39,7 +39,7 @@ class Azureleaf {
    * @param {String} string
    * @returns {String}
    */
-  pascalCase = (string) => {
+  pascalCase(string) {
     const words = string.split(/[^A-Za-z]+/);
 
     const pascalCaseString = words
@@ -59,7 +59,7 @@ class Azureleaf {
    * @param {String} string
    * @returns {String}
    */
-  snakeCase = (string) => {
+  snakeCase(string) {
     const words = string
       .split(/[^A-Za-z]+/)
       .filter((word) => word.trim() !== "");
@@ -79,7 +79,7 @@ class Azureleaf {
    * @param {Number} maxLength
    * @returns {String}
    */
-  truncate = (string, maxLength) => {
+  truncate(string, maxLength) {
     // Error handling checks if valid string and valid number
     if (
       typeof string !== "string" ||
@@ -98,7 +98,7 @@ class Azureleaf {
    * @param {String} substring
    * @returns {Number}
    */
-  countOccurrences = (string, substring) => {
+  countOccurrences(string, substring) {
     if (typeof string !== "string" || string.length === 0) return string;
     else if (typeof substring !== "string" || string.length === 0)
       return substring;
@@ -119,7 +119,9 @@ class Azureleaf {
    * @param {String} string
    * @returns {String}
    */
-  stringReverse = (string) => string.split("").reverse().join("");
+  stringReverse(string) {
+    string.split("").reverse().join("");
+  }
 }
 
 $azl = new Azureleaf();
