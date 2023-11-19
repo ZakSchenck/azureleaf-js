@@ -19,15 +19,6 @@ class CombinedAzureleaf extends Azureleaf {
     });
   }
 
-  // Additional methods or modifications can be added here
 }
 
-// Create an instance of CombinedAzureleaf
 const $azl = new CombinedAzureleaf();
-
-// Use methods from Azureleaf, Arrayzureleaf, and Objectureleaf
-const capitalizedString = $azl.capitalizeFirst('hello');
-console.log(capitalizedString);
-
-const shuffledArray = $azl.shuffle([1, 2, 3]);
-console.log(shuffledArray);
