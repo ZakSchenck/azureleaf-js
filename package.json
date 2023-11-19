@@ -15,8 +15,5 @@
     "utility"
   ],
   "author": "Zak Schenck",
-  "license": "MIT",
-  "dependencies": {
-    "any-required-dependencies": "^1.0.0"
-  }
+  "license": "MIT"
 }
