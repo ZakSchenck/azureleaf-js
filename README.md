@@ -29,7 +29,7 @@ $azl.flatten([1, [2, 3], [4, 5, [6, 7]]]) // Returns [1, 2, 3, 4, 5, 6, 7]
 
 - Count occurrences in an array. Returning an object.
 ```javascript
-$azl.allOccurrences([1, 1, 3, 3, 5]) // Returns { 1: 2, 3: 2, 5, 1 }
+$azl.allOccurrences([1, 1, 3, 3, 5]) // Returns { 1: 2, 3: 2, 5: 1 }
 ```
 
 - Checking equality between two objects. Returns boolean
