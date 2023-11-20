@@ -12,7 +12,7 @@ npm install azureleaf
 ```
 Import as needed:
 ```javascript
-import $azl 'azureleaf'
+import $azl from 'azureleaf'
 ```
 
 ### Some Included Features 
