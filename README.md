@@ -2,7 +2,7 @@
 ## A modern, lightweight Javascript data manipulation library
 ### by Zak Schenck
 
-[Github](https://github.com/ZakSchenck/azureleaf-js)
+[Github](https://github.com/ZakSchenck/azureleaf-js) [Website Docs](https://zakschenck.github.io/azureleaf-web/)
 
 ### Installation 
 
